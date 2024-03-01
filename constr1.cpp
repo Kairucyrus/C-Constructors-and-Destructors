@@ -21,7 +21,7 @@ public:
 
     }
     
-     ~Channel(){
+     ~Channel(){ //destructor for class
 
      }
     void getInfo(){
