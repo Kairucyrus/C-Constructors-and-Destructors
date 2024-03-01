@@ -12,7 +12,7 @@ public:
     list<string> subscribers;
     bool verified;
 
-    Channel(string Name, string OwnerName, bool Verified){
+    Channel(string Name, string OwnerName, bool Verified){ //parameterizad constructor for class Channel
         name = Name;
         ownerName = OwnerName;
         verified = 1;
@@ -25,7 +25,7 @@ public:
 
      }
     void getInfo(){
-        cout << "\nName: " << name << "  "<< "\U0001F468\u200D\U0001F3A4"<<endl;
+        cout << "\nName: " << name << "  "<< "\U0001F468\u200D\U0001F3A4"<<endl; //Unicode for "man-singer" emoji
         cout << "OwnerName: " << ownerName << endl;
         cout << "SubscribersCount: " << SubscribersCount << endl;
         
@@ -39,9 +39,9 @@ public:
         //cout << "PublishedVideosTitles: " << PublishedVideosTitles << endl;
         //cout << "subscribers: " << subscribers << endl;
         if (verified == true)
-            cout<< "\nVerified \u2705 \n\n"<< endl;
+            cout<< "\nVerified \u2705 \n\n"<< endl; //unicode for "green-tick" emoji.
         cout<<"\n"<< endl;
-        if (name == "null" || SubscribersCount == 0){
+        if (name == "null" || SubscribersCount == 0){ //if condition is met, channel is considered not verified or pending completion
             cout << "Channel pending approval" << endl;
         }
 
