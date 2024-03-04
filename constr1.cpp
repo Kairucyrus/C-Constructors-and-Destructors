@@ -21,10 +21,10 @@ public:
 
     }
     
-     ~Channel(){ //destructor for class
+     ~Channel(){ //destructor for our class Channel
 
      }
-    void getInfo(){
+    void getInfo(){ // created to avoid printing out information about every channel using cout in main
         cout << "\nName: " << name << "  "<< "\U0001F468\u200D\U0001F3A4"<<endl; //Unicode for "man-singer" emoji
         cout << "OwnerName: " << ownerName << endl;
         cout << "SubscribersCount: " << SubscribersCount << endl;
@@ -57,7 +57,7 @@ public:
 int main(){
     Channel channel1("Jamie_Miller", "Jamie Miller", true);
     Channel channel2("Sunny_haven", "Samuan Aigno", true);
-    channel1.PublishedVideosTitles.push_back("Lost Myself In Loving You");
+    channel1.PublishedVideosTitles.push_back("Lost Myself In Loving You");//adding video titles to end of vector PublishedVideoTitles
     channel1.PublishedVideosTitles.push_back("Here's Your Perfect");
     channel1.PublishedVideosTitles.push_back("Last Christmas");
     channel1.PublishedVideosTitles.push_back("Streetlights");
